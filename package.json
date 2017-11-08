@@ -1,0 +1,32 @@
+{
+  "name": "ParseBlog",
+  "version": "0.0.1",
+  "main": "server/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build:ts": "tsc -p .",
+    "server": "node server/index.js",
+    "start": "nodemon -e ts --dir server/ --exec \"npm run build:ts && npm run server\""
+  },
+  "author": "Platypi",
+  "license": "MIT",
+  "dependencies": {
+    "@types/angular": "^1.6.36",
+    "@types/body-parser": "^1.16.7",
+    "@types/es6-promise": "0.0.33",
+    "@types/express": "^4.0.39",
+    "@types/mysql": "^2.15.0",
+    "body-parser": "latest",
+    "express": "latest",
+    "express-static": "^1.2.5",
+    "mysql": "^2.15.0",
+    "ng-dialog": "^1.4.0",
+    "nodemon": "latest",
+    "path": "^0.12.7"
+  },
+  "devDependencies": {
+    "@types/node": "^8.0.47",
+    "typescript": "^2.6.1"
+  },
+  "repository": {}
+}
